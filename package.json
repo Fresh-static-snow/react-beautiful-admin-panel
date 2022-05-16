@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Fresh-static-snow.github.io/react-beautiful-admin-panel.git",
   "name": "react-admin-panel",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +8,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "apexcharts": "^3.27.1",
+    "gh-pages": "^4.0.0",
     "react": "18.0.0",
     "react-apexcharts": "^1.3.9",
     "react-dom": "18.0.0",
@@ -17,6 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
